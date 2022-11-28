@@ -65,6 +65,46 @@
     padding: 10px;
 }
 
+
+#navigation{
+    opacity: 0;
+    min-height: 0px;
+    max-height: 0px;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+}
+
+#navigation.active{
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    padding: 26px;
+    font-size: 1.2em;
+    min-height: 100vh;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#navigation.active li{
+    transform: translateX(0px);
+    transition-delay: 0.3s;
+}
+
+header nav ul li{
+    line-height: 50px;
+    list-style: none;
+    transform: translateX(calc(-100% - 5rem));
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#navigation ul{
+    display: flex;
+    flex-direction: column;
+}
+
 header div p img{
     height: 66px;
 }
