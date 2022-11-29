@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #272727;
+    background-color: #000;
+    color: #fff;
+    font-family: Inter, Helvetica, Arial, sans-serif;
 }
 
 .menu-btn{
@@ -14,11 +16,12 @@
     height: 80px;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    background: transparent;
 }
 
 .menu-btn__burger{
-    width: 50px;
-    height: 6px;
+    width: 25px;
+    height: 2px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -28,12 +31,13 @@
 .menu-btn__burger::before, .menu-btn__burger::after{
     content: '';
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 25px;
+    height: 2px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;
+
 }
 
 .menu-btn__burger::before{
@@ -63,6 +67,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    background: transparent;
 }
 
 
@@ -72,27 +77,36 @@
     max-height: 0px;
     pointer-events: none;
     transition: all 0.3s ease 0s;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 #navigation.active{
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    padding: 26px;
-    font-size: 1.2em;
-    min-height: 100vh;
     opacity: 1;
-    transition: all 0.3s ease 0s;
+    min-height: 100vh;
+    max-height: 100vh;
+    
 }
 
-#navigation.active li{
+#navigation.active ul li{
     transform: translateX(0px);
     transition-delay: 0.3s;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
 }
 
 header nav ul li{
     line-height: 50px;
     list-style: none;
     transform: translateX(calc(-100% - 5rem));
+    transition: all 0.1s ease 0s;
+    background-color: transparent;
 }
 
 header nav ul li a{
@@ -103,8 +117,17 @@ header nav ul li a{
 #navigation ul{
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    background-color: transparent;
+}
+
+header div p{
+    background: transparent;
 }
 
 header div p img{
     height: 66px;
+    background: transparent;
 }
