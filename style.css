@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,62 +7,63 @@
     font-family: Inter, Helvetica, Arial, sans-serif;
 }
 
-.menu-btn{
-    position: relative;
+.container {
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    background: transparent;
+    justify-content: center;
 }
 
-.menu-btn__burger{
-    width: 25px;
-    height: 2px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
-    transition: all .5s ease-in-out;
-}
-
-.menu-btn__burger::before, .menu-btn__burger::after{
-    content: '';
+#checkbox-menu {
     position: absolute;
-    width: 25px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
-    transition: all .5s ease-in-out;
-
+    opacity: 0;
 }
 
-.menu-btn__burger::before{
-    transform: translateY(-16px);
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
 }
 
-.menu-btn__burger::after{
-    transform: translateY(16px);
+label span {
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    transition: 0.25s ease-in-out;
 }
 
-.menu-btn.open .menu-btn__burger{
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
+label span:nth-child(1) {
+    top: 0;
 }
 
-.menu-btn.open .menu-btn__burger::before{
-    transform: rotate(45deg) translate(35px, -35px);
+label span:nth-child(2) {
+    top: 8px;
 }
 
-.menu-btn.open .menu-btn__burger::after{
-    transform: rotate(-45deg) translate(35px, 35px);
+label span:nth-child(3) {
+    top: 16px;
 }
 
-.content-header{
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.content-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +72,7 @@
 }
 
 
-#navigation{
+#navigation {
     opacity: 0;
     min-height: 0px;
     max-height: 0px;
@@ -82,26 +83,26 @@
     background: rgba(0, 0, 0, 0.9);
 }
 
-#navigation.active{
+#navigation.active {
     opacity: 1;
     min-height: 100vh;
     max-height: 100vh;
-    
+
 }
 
-#navigation.active ul li{
+#navigation.active ul li {
     transform: translateX(0px);
     transition-delay: 0.3s;
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
 }
 
-header nav ul li{
+header nav ul li {
     line-height: 50px;
     list-style: none;
     transform: translateX(calc(-100% - 5rem));
@@ -109,12 +110,12 @@ header nav ul li{
     background-color: transparent;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-#navigation ul{
+#navigation ul {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -123,11 +124,68 @@ header nav ul li a{
     background-color: transparent;
 }
 
-header div p{
+header div p {
     background: transparent;
 }
 
-header div p img{
+header div p img {
     height: 66px;
     background: transparent;
+}
+
+.content-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 104px 20px;
+}
+
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.content-cell img {
+    height: 200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button {
+    height: 40px;
+    width: 130px;
+    border: 0;
+    background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);
+    border-radius: 20px;
+}
+
+.good-points {
+    background-color: #080808;
+}
+
+.content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+.grid-gp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 50px;
+    text-align: center;
+    background-color: transparent;
 }

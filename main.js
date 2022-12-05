@@ -1,14 +1,12 @@
-const menuBtn = document.querySelector('.menu-btn')
+const menuBtn = document.getElementById('checkbox-menu')
 const navBar = document.getElementById('navigation')
-let menuOpen = false
+
 menuBtn.addEventListener('click',()=>{
-    if(!menuOpen){
-        menuBtn.classList.add('open')
-        menuOpen = true
+    if(menuBtn.checked == true){
         navBar.classList.toggle('active')
+        document.body.style.overflowY = 'hidden'
     }else{
-        menuBtn.classList.remove('open')
-        menuOpen = false
         navBar.classList.toggle('active')
+        document.body.style.overflowY = 'auto'
     }
 })
