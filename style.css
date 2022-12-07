@@ -243,7 +243,7 @@ header div p img {
 .bar .progress-line span{
     height: 100%;
     width: 80%;
-    background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);;
+    background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);
     position: absolute;
     border-radius: 10px;
     transform: scaleX(0);
@@ -297,7 +297,7 @@ header div p img {
     top: -24px;
     font-size: 12px;
     font-weight: 500;
-    background: #000;
+    background: rgb(0, 0, 0);
     padding: 1px 8px;
     border-radius: 3px;
     opacity: 0;
