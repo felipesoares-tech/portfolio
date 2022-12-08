@@ -365,6 +365,11 @@ header div p img {
 .point div{
     margin-bottom: 20px;
 }
+
+strong{
+    display: block;
+}
+
 .point strong{
     margin-bottom: 8px;
 }
