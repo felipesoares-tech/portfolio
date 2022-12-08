@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: #fff;
     font-family: Inter, Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -335,4 +336,9 @@ header div p img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.text img{
+    height: 190px;
+    
 }
