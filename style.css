@@ -347,3 +347,12 @@ header div p img {
     height: 35px;
 
 }
+
+.grid-gp img{
+    height: 47px;
+}
+
+.point{
+    display: flex;
+    flex-direction: column;
+}
