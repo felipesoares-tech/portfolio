@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+p{
+    color: rgb(207, 207, 207);
+}
+
 .container {
     height: 100%;
     display: flex;
@@ -105,6 +109,7 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
+    border-bottom: 1px solid rgba(82, 80, 80, 0.63);
 }
 
 header nav ul li {
@@ -355,4 +360,16 @@ header div p img {
 .point{
     display: flex;
     flex-direction: column;
+}
+
+.point div{
+    margin-bottom: 20px;
+}
+.point strong{
+    margin-bottom: 8px;
+}
+
+.point p{
+    line-height: 23px;
+    font-size: 0.9em;
 }
