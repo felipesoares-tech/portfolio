@@ -38,7 +38,7 @@ label {
 label span {
     position: absolute;
     display: block;
-    height: 3px;
+    height: 1.8px;
     width: 100%;
     border-radius: 30px;
     background: #fff;
@@ -108,7 +108,7 @@ header {
     position: fixed;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1.1px);
     border-bottom: 1px solid rgba(82, 80, 80, 0.63);
 }
 
