@@ -445,6 +445,11 @@ strong{
     opacity: 1;
 }
 
+.parent:hover .bg-black span{
+    transition: 0.3s;
+    transform: translateX(0%);
+}
+
 .bg-black{
     opacity: 0;
     transition: all 1s;
@@ -453,7 +458,11 @@ strong{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.904);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
 
+.bg-black span{
+    transform: translateX(-700%);
+    transition: 0.3s;
 }
