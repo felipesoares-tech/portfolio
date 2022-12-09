@@ -186,7 +186,7 @@ header div p img {
 
 .content {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: transparent;
@@ -226,6 +226,10 @@ header div p img {
     font-weight: 500;
     opacity: 0;
     animation: showText 0.5s 1s linear forwards;
+}
+
+.bar .progress-line span.hideProgBar{
+   animation: none;
 }
 
 @keyframes showText {
