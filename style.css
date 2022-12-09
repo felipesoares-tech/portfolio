@@ -394,4 +394,66 @@ strong{
     -webkit-text-fill-color: transparent;
     color: #fff;
     letter-spacing: 3px;
+    font-size: 1.5em;
+}
+
+.bg-one{
+    position: relative;
+    background-image: url('assets/img/bg-img.png');
+}
+
+.bg-two{
+    position: relative;
+    background-image: url('assets/img/bg-img.png');
+}
+
+.bg-three{
+    position: relative;
+    background-image: url('assets/img/bg-img.png');
+}
+
+.project{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parent{
+    width: 75%;
+    margin: 20px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(54, 51, 51);
+}
+
+.child{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: all 1.1s;
+}
+
+.parent:hover .child{
+    transform: scale(1.2);
+}
+
+.parent:hover .bg-black{
+    opacity: 1;
+}
+
+.bg-black{
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
