@@ -1,6 +1,7 @@
 const menuBtn = document.getElementById('checkbox-menu')
 const navBar = document.getElementById('navigation')
 const spans = document.querySelectorAll('.prog')
+const items = document.getElementById('list-item-header')
 
 menuBtn.addEventListener('click', () => {
     if (menuBtn.checked == true) {
