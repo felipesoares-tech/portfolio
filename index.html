@@ -84,47 +84,75 @@
             <div class="text">
                 <h1 class="gradient">SOBRE</h1> <br>
                 <strong>Vou te contar um pouco sobre mim...</strong>
-                <img src="assets/img/perfil-1.png" alt="">
-                <p>
-                    Meu nome é Felipe Soares, desenvolvedor Full Stack com maior foco em desenvolvimento Backend.
-                    Atualmente estou cursando Análise e Desenvolvimento de Sistemas. Gosto de estar sempre aprendendo
-                    coisas novas e continuar subindo cada dia mais.
-                </p>
+                <div class="about-me">
+                    <div><img src="assets/img/perfil-1.png" alt=""></div>
+                    <p>
+                        Meu nome é Felipe Soares, desenvolvedor Full Stack com maior foco em desenvolvimento Backend.
+                        Atualmente estou cursando Análise e Desenvolvimento de Sistemas. Gosto de estar sempre aprendendo
+                        coisas novas e continuar subindo cada dia mais.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="skill-bar">
-            <div class="bar">
-                <div class="info">
-                    <span>CSS</span>
+        <div class="about-me-info">
+            <div class="container-info">
+                <div>
+                    <h2 class="gradient">PERFIL</h2>
+                    <p>Eu amo programação, me divirto muito e tomo bastante café durante meus projetos.</p>
                 </div>
-                <div class="progress-line css"><span class="prog"></span></div>
+                <div>
+                    <h2 class="gradient">NOME:</h2>
+                    <p>Felipe Soares</p>
+                </div>
+                <div>
+                    <h2 class="gradient">NASCIMENTO:</h2>
+                    <p>26 de Maio de 1999</p>
+                </div>
+                <div>
+                    <h2 class="gradient">WEBSITE:</h2>
+                    <p>felipe.com.br</p>
+                </div>
+                <div>
+                    <h2 class="gradient">EMAIL</h2>
+                    <p>soares.felipe200@gmail.com</p>
+                </div>
             </div>
-            <div class="bar">
-                <div class="info">
-                    <span>HTML</span>
+
+            <div class="skill-bar">
+                <div class="bar">
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css"><span class="prog"></span></div>
                 </div>
-                <div class="progress-line html"><span class="prog"></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>jQuery</span>
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html"><span class="prog"></span></div>
                 </div>
-                <div class="progress-line jquery"><span class="prog"></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>Python</span>
+                <div class="bar">
+                    <div class="info">
+                        <span>jQuery</span>
+                    </div>
+                    <div class="progress-line jquery"><span class="prog"></span></div>
                 </div>
-                <div class="progress-line python"><span class="prog"></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>JavaScript</span>
+                <div class="bar">
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python"><span class="prog"></span></div>
                 </div>
-                <div class="progress-line javascript"><span class="prog"></span></div>
+                <div class="bar">
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line javascript"><span class="prog"></span></div>
+                </div>
             </div>
         </div>
+
     </section>
 
     <section id="portfolio">
@@ -179,42 +207,61 @@
             <div class="text">
                 <strong><p class="gradient">CONTATO</p></strong>
                 <h2>Vamos lá?!</h2>
+                <p>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</p>
             </div>
-            <div class="formContainer">
-                <form action="">
-                    <div class="col50 inputBx">
-                        <input type="text" name="" required>
-                        <span>Nome</span>
-                        <div class="line"></div>
-                    </div>
-                    <div class="col50 inputBx">
-                        <input id="whats" type="text" name="whatsapp" required>
-                        <span>Whatsapp</span>
-                        <div class="line"></div>
-                    </div>
-                    <div class="col50 inputBx">
-                        <input type="text" name="" required>
-                        <span>Email</span>
-                        <div class="line"></div>
-                    </div>
-                    <div class="col100 inputBx">
-                        <textarea name="" id="" cols="30" rows="10" required></textarea>
-                        <span id="msg">Mensagem</span>
-                        <div class="line"></div>
-                    </div>
-                    <div class="choices">
+            <div class="contact-container">
+                <div class="formContainer">
+                    <form action="">
+                        <div class="col50 inputBx">
+                            <input type="text" name="" required>
+                            <span>Nome</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="col50 inputBx">
+                            <input id="whats" type="text" name="whatsapp" required>
+                            <span>Whatsapp</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="col50 inputBx">
+                            <input type="text" name="" required>
+                            <span>Email</span>
+                            <div class="line"></div>
+                        </div>
                         <div class="col100 inputBx">
-                            <input type="submit" value="Enviar">
+                            <textarea name="" id="" cols="30" rows="10" required></textarea>
+                            <span id="msg">Mensagem</span>
+                            <div class="line"></div>
                         </div>
-                        <div>
-                            <p>Ou entre em contato pelo whatsapp: (38) 99860-5529</p>
+                        <div class="choices">
+                            <div class="col100 inputBx">
+                                <input type="submit" value="Enviar">
+                            </div>
+                            <div>
+                                <p>Ou entre em contato pelo whatsapp: (38) 99860-5529</p>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+    
+                <div class="deg-container">
+                    <img src="assets/img/degraus.png" alt="">
+                </div>
             </div>
 
         </div>
     </section>
+
+    <footer>
+        <div class="container-footer-items">
+            <div>
+                <p>© Copyright 2022 por Felipe Soares.
+                    Todos os direitos reservados.</p>
+            </div>
+            <div id="container-arrow">
+                <img src="assets/img/arrow-up.png" alt="arrow">
+            </div>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="main.js"></script>

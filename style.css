@@ -11,7 +11,7 @@ p {
     color: rgb(207, 207, 207);
 }
 
-h1{
+h1 {
     font-size: 3em;
 }
 
@@ -23,12 +23,82 @@ h1{
     display: none;
 }
 
+#portfolio{
+    padding-top: 30px;
+}
+
 body {
     background-color: #000;
 }
 
-#checkbox-menu{
+#checkbox-menu {
     display: none;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #080808;
+    border-top: 1px solid rgba(82, 80, 80, 0.63);
+}
+
+.container-footer-items{
+    display: flex;
+    align-items: center;
+    gap: 850px;
+}
+
+.container-footer-items img{
+    height: 20px;
+}
+
+#container-arrow{
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.contact-container .deg-container img{
+    height: 550px;
+}
+
+.about-me-info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.about-me-info div div p{
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.about-me-info div div h2{
+    font-size: 1.48em;
+    margin-bottom: 20px;
 }
 
 .content-header {
@@ -44,19 +114,19 @@ body {
     position: absolute;
 }
 
-.projects{
+.projects {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-.btn-desktop{
+.btn-desktop {
     position: relative;
     z-index: 2;
     display: block;
 }
 
-.btn-desktop button{
+.btn-desktop button {
     width: auto;
     padding: 10px 30px;
     border: 1px solid #3a0ca3;
@@ -68,7 +138,7 @@ body {
     cursor: pointer;
 }
 
-.btn-desktop button:hover{
+.btn-desktop button:hover {
     cursor: pointer;
 }
 
@@ -147,6 +217,10 @@ header div p img {
     font-size: 1.3em;
 }
 
+.about-me p {
+    text-align: left;
+}
+
 .content-cell img {
     height: 600px;
 }
@@ -192,10 +266,13 @@ header div p img {
 }
 
 .skill-bar {
-    width: 25%;
+    width: 597.66px;
+    height: 431.25px;
     background: #141414;
     border-radius: 10px;
     padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -341,8 +418,8 @@ header div p img {
     align-items: center;
 }
 
-.text img {
-    height: 190px;
+.about-me div img {
+    height: 130px;
 }
 
 #dev-symb {
@@ -464,7 +541,7 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 525px;
     height: auto;
     padding: 20px 12px;
 }
@@ -503,7 +580,8 @@ strong {
     border-bottom: none;
     background-color: transparent;
 }
-.line{
+
+.line {
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -511,7 +589,7 @@ strong {
     background: rgb(39, 38, 38);
 }
 
-.line::before{
+.line::before {
     position: absolute;
     content: "";
     height: 100%;
@@ -522,13 +600,12 @@ strong {
 
 }
 
-form .inputBx input:focus~ .line::before,
-form .inputBx input:valid~ .line::before,
-form .inputBx textarea:focus~ .line::before,
-form .inputBx textarea:valid~ .line::before
-{
+form .inputBx input:focus~.line::before,
+form .inputBx input:valid~.line::before,
+form .inputBx textarea:focus~.line::before,
+form .inputBx textarea:valid~.line::before {
     transform: scaleX(1);
-} 
+}
 
 
 .inputBx textarea {
@@ -597,29 +674,110 @@ form .inputBx textarea:valid~span {
     -webkit-transition: opacity 1s linear;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
 
-.social div{
+.social div {
     background-color: #141414;
     padding: 5px;
     border-radius: 5px;
 }
 
-.social div img{
+.social div img {
     height: 45px;
 }
 
-@media only screen and (max-width: 768px){
-    .btn-desktop{
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #portfolio{
+        padding-top: 50px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        background-color: #080808;
+        border-top: 1px solid rgba(82, 80, 80, 0.63);
+    }
+
+    .container-footer-items{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .container-footer-items img{
+        height: 20px;
+    }
+    
+    #container-arrow{
+        background-color: #141414;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .contact-container .deg-container img{
+        height: 300px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-me-info{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+ 
+    .about-me-info div div h2{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .about-me-info div div p{
+        font-size: small;
+        margin-bottom: 15px;
+    }
+
+    .about-me-info .container-info{
+        padding: 25px 30px;
+    }
+
+    .about-me p {
+        text-align: center;
+    }
+
+    .btn-desktop {
         display: none;
     }
 
-    .projects{
+    .projects {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -632,7 +790,7 @@ form .inputBx textarea:valid~span {
         justify-content: center;
         display: block;
     }
-    
+
     body {
         background-color: #000;
     }
@@ -641,7 +799,7 @@ form .inputBx textarea:valid~span {
         position: absolute;
         opacity: 0;
     }
-    
+
     label {
         cursor: pointer;
         position: relative;
@@ -649,7 +807,7 @@ form .inputBx textarea:valid~span {
         height: 22px;
         width: 30px;
     }
-    
+
     label span {
         position: absolute;
         display: block;
@@ -659,33 +817,33 @@ form .inputBx textarea:valid~span {
         background: #fff;
         transition: 0.25s ease-in-out;
     }
-    
+
     label span:nth-child(1) {
         top: 0;
     }
-    
+
     label span:nth-child(2) {
         top: 8px;
     }
-    
+
     label span:nth-child(3) {
         top: 16px;
     }
-    
+
     #checkbox-menu:checked+label span:nth-child(1) {
         transform: rotate(-45deg);
         top: 8px;
     }
-    
+
     #checkbox-menu:checked+label span:nth-child(2) {
         opacity: 0;
     }
-    
+
     #checkbox-menu:checked+label span:nth-child(3) {
         transform: rotate(45deg);
         top: 8px;
     }
-    
+
     .content-header {
         top: 0;
         display: flex;
@@ -698,8 +856,8 @@ form .inputBx textarea:valid~span {
         background: transparent;
         position: relative
     }
-    
-    
+
+
     #navigation {
         opacity: 0;
         min-height: 0px;
@@ -710,34 +868,34 @@ form .inputBx textarea:valid~span {
         background: rgba(0, 0, 0, 0.178);
         z-index: 1;
     }
-    
+
     #navigation.active {
         position: relative;
         opacity: 1;
         min-height: 100vh;
         max-height: 100vh;
     }
-    
+
     #navigation.active ul li:nth-child(1) {
         transform: translateX(0px);
         transition-delay: 0.2s;
     }
-    
+
     #navigation.active ul li:nth-child(2) {
         transform: translateX(0px);
         transition-delay: 0.3s;
     }
-    
+
     #navigation.active ul li:nth-child(3) {
         transform: translateX(0px);
         transition-delay: 0.4s;
     }
-    
+
     #navigation.active ul li:nth-child(4) {
         transform: translateX(0px);
         transition-delay: 0.5s;
     }
-    
+
     #header-page {
         position: fixed;
         width: 100%;
@@ -747,18 +905,18 @@ form .inputBx textarea:valid~span {
         border-bottom: 1px solid rgba(82, 80, 80, 0.63);
         z-index: 1;
     }
-    
+
     header nav ul li {
         line-height: 50px;
         list-style: none;
         background-color: transparent;
     }
-    
+
     header nav ul li a {
         text-decoration: none;
         color: #fff;
     }
-    
+
     #navigation ul {
         display: flex;
         flex-direction: column;
@@ -770,21 +928,21 @@ form .inputBx textarea:valid~span {
         background-color: transparent;
         justify-content: left;
     }
-    
+
     #navigation ul li {
         transform: translateX(calc(-100% - 5rem));
         transition: all 0.1s ease 0s;
     }
-    
+
     header div p {
         background: transparent;
     }
-    
+
     header div p img {
         height: 66px;
         background: transparent;
     }
-    
+
     .content-cell {
         display: flex;
         flex-direction: column;
@@ -793,30 +951,30 @@ form .inputBx textarea:valid~span {
         margin-left: 0;
         margin-right: 0;
     }
-    
-    
+
+
     .text {
         text-align: center;
     }
-    
+
     .text p {
         margin-top: 12px;
         margin-bottom: 20px;
         line-height: 22px;
         font-size: 1.1em;
     }
-    
+
     .content-cell img {
         height: 200px;
     }
-    
+
     .buttons {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
-    
+
     .buttons button {
         height: 40px;
         width: 130px;
@@ -824,14 +982,15 @@ form .inputBx textarea:valid~span {
         background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);
         border-radius: 20px;
     }
-    
+
     .good-points {
         background-color: #080808;
     }
-    
+
     .content {
         padding-top: 70px;
         padding-bottom: 10px;
+        padding: 0;
         margin-left: 20px;
         margin-right: 20px;
         background-color: transparent;
@@ -840,7 +999,7 @@ form .inputBx textarea:valid~span {
         justify-content: center;
         align-items: center
     }
-    
+
     .grid-gp {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -848,27 +1007,27 @@ form .inputBx textarea:valid~span {
         text-align: center;
         background-color: transparent;
     }
-    
+
     .skill-bar {
         width: 380px;
         background: #141414;
         border-radius: 10px;
         padding: 25px 30px;
-    
+
     }
-    
+
     .skill-bar .bar {
         margin: 20px 0;
     }
-    
+
     .skill-bar .bar:first-child {
         margin-top: 0px;
     }
-    
+
     .skill-bar .bar .info {
         margin-bottom: 5px;
     }
-    
+
     .skill-bar .bar .info span {
         color: #fff;
         font-size: 17px;
@@ -876,18 +1035,18 @@ form .inputBx textarea:valid~span {
         opacity: 0;
         animation: showText 0.5s 1s linear forwards;
     }
-    
+
     .bar .progress-line span.hideProgBar {
         animation: none;
     }
-    
+
     @keyframes showText {
         100% {
             opacity: 1;
         }
     }
-    
-    
+
+
     .skill-bar .bar .progress-line {
         position: relative;
         height: 10px;
@@ -898,9 +1057,9 @@ form .inputBx textarea:valid~span {
         /* box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
                           0px 1px rgba(255, 255, 255, 0.8); */
         animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    
+
     }
-    
+
     .bar .progress-line span {
         height: 100%;
         width: 80%;
@@ -911,33 +1070,33 @@ form .inputBx textarea:valid~span {
         transform-origin: left;
         animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     }
-    
+
     @keyframes animate {
         100% {
             transform: scaleX(1);
         }
     }
-    
+
     .progress-line.html span {
         width: 80%;
     }
-    
+
     .progress-line.css span {
         width: 60%;
     }
-    
+
     .progress-line.jquery span {
         width: 85%;
     }
-    
+
     .progress-line.python span {
         width: 50%;
     }
-    
+
     .progress-line.javascript span {
         width: 75%;
     }
-    
+
     .bar .progress-line span::before {
         position: absolute;
         content: "";
@@ -951,7 +1110,7 @@ form .inputBx textarea:valid~span {
         opacity: 0;
         animation: showText2 0.5s 1.5s linear forwards;
     }
-    
+
     .bar .progress-line span::after {
         position: absolute;
         right: 0;
@@ -964,82 +1123,86 @@ form .inputBx textarea:valid~span {
         opacity: 0;
         animation: showText2 0.5s 1.5s linear forwards;
     }
-    
+
     @keyframes showText2 {
         100% {
             opacity: 1;
         }
     }
-    
+
     .progress-line.html span::after {
         content: "80%";
     }
-    
+
     .progress-line.css span::after {
         content: "60%";
     }
-    
+
     .progress-line.jquery span::after {
         content: "85%";
     }
-    
+
     .progress-line.python span::after {
         content: "50%";
     }
-    
+
     .progress-line.javascript span::after {
         content: "75%";
     }
-    
+
     #about {
-        padding-top: 0;
+        padding-top: 57px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
-    .text img {
+
+    #contact{
+        padding-top: 50px;
+    }
+
+    .about-me div img {
         height: 190px;
     }
-    
+
     #dev-symb {
         height: 35px;
-    
+
     }
-    
+
     .grid-gp img {
         height: 47px;
     }
-    
+
     .point {
         display: flex;
         flex-direction: column;
     }
-    
+
     .point div {
         margin-bottom: 20px;
     }
-    
+
     strong {
         font-size: 1em;
         display: block;
     }
-    
+
     .point strong {
         margin-bottom: 8px;
     }
-    
+
     .point p {
         line-height: 23px;
         font-size: 0.9em;
     }
-    
+
     #about img {
         margin-top: 20px;
         margin-bottom: 15px;
     }
-    
+
     .gradient {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1048,27 +1211,27 @@ form .inputBx textarea:valid~span {
         letter-spacing: 3px;
         font-size: 1.5em;
     }
-    
+
     .bg-one {
         position: relative;
         background-image: url('assets/img/bg-img.png');
     }
-    
+
     .bg-two {
         position: relative;
         background-image: url('assets/img/bg-img.png');
     }
-    
+
     .bg-three {
         position: relative;
         background-image: url('assets/img/bg-img.png');
     }
-    
+
     .project {
         text-align: center;
         width: 100%;
     }
-    
+
     .parent {
         width: 75%;
         margin: 20px;
@@ -1080,27 +1243,27 @@ form .inputBx textarea:valid~span {
         border-radius: 10px;
         border: 1px solid rgb(54, 51, 51);
     }
-    
+
     .child {
         height: 100%;
         width: 100%;
         background-size: cover;
         transition: all 1.1s;
     }
-    
+
     .parent:hover .child {
         transform: scale(1.2);
     }
-    
+
     .parent:hover .bg-black {
         opacity: 1;
     }
-    
+
     .parent:hover .bg-black span {
         transition: 0.3s;
         transform: translateX(0px);
     }
-    
+
     .bg-black {
         opacity: 0;
         transition: all 1s;
@@ -1112,12 +1275,12 @@ form .inputBx textarea:valid~span {
         align-items: center;
         justify-content: center;
     }
-    
+
     .bg-black span {
         transform: translateX(calc(-100% - 5rem));
         transition: 0.3s;
     }
-    
+
     .formContainer {
         display: flex;
         justify-content: center;
@@ -1126,7 +1289,7 @@ form .inputBx textarea:valid~span {
         height: auto;
         padding: 20px 12px;
     }
-    
+
     .formContainer form {
         display: flex;
         justify-content: center;
@@ -1136,20 +1299,20 @@ form .inputBx textarea:valid~span {
         width: 98%;
         padding: 29px;
     }
-    
+
     .formContainer .col50 {
         width: 100%;
     }
-    
+
     .formContainer .col100 {
         width: 100%;
     }
-    
+
     .inputBx {
         position: relative;
         margin: 0 0 32px 0;
     }
-    
+
     .inputBx input,
     .inputBx textarea {
         width: 100%;
@@ -1161,15 +1324,16 @@ form .inputBx textarea:valid~span {
         border-bottom: none;
         background-color: transparent;
     }
-    .line{
+
+    .line {
         width: 100%;
         position: absolute;
         bottom: 0px;
         height: 2px;
         background: rgb(39, 38, 38);
     }
-    
-    .line::before{
+
+    .line::before {
         position: absolute;
         content: "";
         height: 100%;
@@ -1177,23 +1341,22 @@ form .inputBx textarea:valid~span {
         background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
         transform: scaleX(0);
         transition: transform 0.3s ease;
-    
+
     }
-    
-    form .inputBx input:focus~ .line::before,
-    form .inputBx input:valid~ .line::before,
-    form .inputBx textarea:focus~ .line::before,
-    form .inputBx textarea:valid~ .line::before
-    {
+
+    form .inputBx input:focus~.line::before,
+    form .inputBx input:valid~.line::before,
+    form .inputBx textarea:focus~.line::before,
+    form .inputBx textarea:valid~.line::before {
         transform: scaleX(1);
-    } 
-    
-    
+    }
+
+
     .inputBx textarea {
         min-height: 70px;
         resize: none;
     }
-    
+
     .inputBx input[type="submit"] {
         width: auto;
         padding: 10px 30px;
@@ -1205,12 +1368,12 @@ form .inputBx textarea:valid~span {
         transition: 0.3s;
         cursor: pointer;
     }
-    
+
     .inputBx input[type="submit"]:hover {
         background: #fff;
         color: #3a0ca3;
     }
-    
+
     .inputBx span {
         color: rgb(63, 59, 59);
         position: absolute;
@@ -1219,11 +1382,11 @@ form .inputBx textarea:valid~span {
         transition: 0.5s;
         pointer-events: none;
     }
-    
+
     #msg {
         bottom: 160px;
     }
-    
+
     form .inputBx input:focus~span,
     form .inputBx input:valid~span {
         transform: translateY(-25px);
@@ -1233,7 +1396,7 @@ form .inputBx textarea:valid~span {
         color: #fff;
         left: 0;
     }
-    
+
     form .inputBx textarea:focus~span,
     form .inputBx textarea:valid~span {
         transform: translateY(-20px);
@@ -1243,34 +1406,33 @@ form .inputBx textarea:valid~span {
         color: #fff;
         left: 0;
     }
-    
+
     .choices {
         display: flex;
         flex-direction: row-reverse;
         gap: 33px;
     }
-    
+
     .placeHolderText::-webkit-input-placeholder {
         opacity: 0;
         -webkit-transition: opacity 1s linear;
     }
-    
-    .social{
+
+    .social {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 12px;
     }
-    
-    .social div{
+
+    .social div {
         background-color: #141414;
         padding: 5px;
         border-radius: 5px;
     }
-    
-    .social div img{
+
+    .social div img {
         height: 45px;
     }
 
 }
-
