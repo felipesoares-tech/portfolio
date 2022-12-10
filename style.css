@@ -496,7 +496,7 @@ strong {
     transition: 0.3s;
 }
 
-.formContainer{
+.formContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -505,89 +505,130 @@ strong {
     padding: 20px 12px;
 }
 
-.formContainer form{
+.formContainer form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #080808;
+    background-color: #141414;
     width: 98%;
     padding: 29px;
 }
 
-.formContainer .col50{
+.formContainer .col50 {
     width: 100%;
 }
 
-.formContainer .col100{
+.formContainer .col100 {
     width: 100%;
 }
 
-.inputBx{
+.inputBx {
     position: relative;
-    margin: 0 0 30px 0;
+    margin: 0 0 32px 0;
 }
 
-.inputBx input, .inputBx textarea{
+.inputBx input,
+.inputBx textarea {
     width: 100%;
     padding: 30px;
     padding-left: 2px;
     padding-bottom: 11px;
     outline: none;
     border: none;
-    border-bottom: 3px solid rgb(43, 40, 40);
+    border-bottom: none;
     background-color: transparent;
 }
+.line{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    background: rgb(39, 38, 38);
+}
 
-.inputBx textarea{
+.line::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+
+}
+
+form .inputBx input:focus~ .line::before,
+form .inputBx input:valid~ .line::before,
+form .inputBx textarea:focus~ .line::before,
+form .inputBx textarea:valid~ .line::before
+{
+    transform: scaleX(1);
+} 
+
+
+.inputBx textarea {
     min-height: 70px;
     resize: none;
 }
 
-.inputBx input[type="submit"]{
+.inputBx input[type="submit"] {
     width: auto;
     padding: 10px 30px;
     border: 1px solid #3a0ca3;
     font-weight: 800;
-    background-color:  #3a0ca3;
-    color: #fff;
+    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    color: rgb(235, 227, 227);
     border-radius: 25px;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.inputBx input[type="submit"]:hover{
+.inputBx input[type="submit"]:hover {
     background: #fff;
     color: #3a0ca3;
 }
 
-.inputBx span{
+.inputBx span {
     color: rgb(63, 59, 59);
     position: absolute;
     left: 25px;
-    bottom: 9px;
+    bottom: 15px;
     transition: 0.5s;
     pointer-events: none;
 }
 
-#msg{
+#msg {
     bottom: 160px;
 }
 
-form .inputBx input:focus ~ span,form .inputBx input:valid ~ span{
-    transform: translateY(-40px);
-    color: #3a0ca3;
+form .inputBx input:focus~span,
+form .inputBx input:valid~span {
+    transform: translateY(-25px);
+    background-image: linear-gradient(130deg, rgb(81, 12, 83) 0%, rgb(86, 9, 121) 35%, rgb(201, 187, 195) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
     left: 0;
 }
 
-form .inputBx textarea:focus ~ span,form .inputBx textarea:valid ~ span{
-    transform: translateY(-30px);
-    color: #3a0ca3;
+form .inputBx textarea:focus~span,
+form .inputBx textarea:valid~span {
+    transform: translateY(-20px);
+    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
     left: 0;
 }
 
-.choices{
+.choices {
     display: flex;
     flex-direction: row-reverse;
     gap: 33px;
+}
+
+.placeHolderText::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity 1s linear;
 }

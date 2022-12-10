@@ -1,7 +1,6 @@
 const menuBtn = document.getElementById('checkbox-menu')
 const navBar = document.getElementById('navigation')
 const spans = document.querySelectorAll('.prog')
-const inputWhats = document.getElementById('whats')
 
 menuBtn.addEventListener('click', () => {
     if (menuBtn.checked == true) {
@@ -13,13 +12,6 @@ menuBtn.addEventListener('click', () => {
     }
 })
 
-inputWhats.addEventListener('focus', () =>{
-    if($("#whats").is(":focus"))
-        inputWhats.setAttribute('placeholder','Ex: (38) 99911-0296')
-    else
-        inputWhats.removeAttribute('placeholder')
-
-})
 
 $(document).on('scroll', function () {
     if ($(this).scrollTop() >= $('#about').position().top) {
