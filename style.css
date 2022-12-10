@@ -854,7 +854,7 @@ form .inputBx textarea:valid~span {
         width: auto;
         padding-left: 17px;
         background: transparent;
-        position: relative
+        position: relative;
     }
 
 
