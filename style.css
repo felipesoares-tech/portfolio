@@ -85,15 +85,15 @@ label span:nth-child(3) {
     opacity: 0;
     min-height: 0px;
     max-height: 0px;
-    pointer-events: none;
     transition: all 0.3s ease 0s;
     position: absolute;
     width: 100%;
-    background: rgba(0, 0, 0, 0.89);
+    background: rgba(0, 0, 0, 0.178);
     z-index: 1;
 }
 
 #navigation.active {
+    position: relative;
     opacity: 1;
     min-height: 100vh;
     max-height: 100vh;
