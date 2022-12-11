@@ -106,9 +106,11 @@ menuBtn.addEventListener('click', () => {
     if (menuBtn.checked == true) {
         navBar.classList.toggle('active')
         document.body.style.overflowY = 'hidden'
+        items.setAttribute('style','flex-direction: column;')
     } else {
         navBar.classList.toggle('active')
         document.body.style.overflowY = 'auto'
+        items.setAttribute('style','flex-direction: row;')
     }
 })
 

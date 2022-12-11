@@ -1038,7 +1038,7 @@ form .inputBx textarea:valid~span {
 
     #navigation ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: relative;
         z-index: -1;
         gap: 0;
