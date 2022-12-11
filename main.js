@@ -2,7 +2,6 @@ const menuBtn = document.getElementById('checkbox-menu')
 const navBar = document.getElementById('navigation')
 const spans = document.querySelectorAll('.prog')
 const items = document.getElementById('list-item-header')
-const rootVariables = document.querySelector(':root');
 const chkTheme = document.getElementById('chk');
 const htmlTag = document.getElementById('ht5')
 const GetTheme = JSON.parse(localStorage.getItem('PageTheme'))
