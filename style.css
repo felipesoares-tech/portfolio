@@ -23,7 +23,8 @@ p {
     --color-background: #000;
     --background-social: #141414;
     --color-btn: var(--h1-color);
-    --color-sub-title: var(var(--h1-color)) --text-points: #fff;
+    --color-sub-title: var(--h1-color); 
+    --text-points: #fff;
 }
 
 .light-mode:root {
