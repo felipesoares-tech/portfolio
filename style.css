@@ -48,6 +48,8 @@ h1 {
     display: none;
 }
 
+
+
 .container {
     height: 100%;
     display: flex;
@@ -319,6 +321,7 @@ header div p img {
 
 .good-points {
     background-color: #080808;
+    padding: 0;
 }
 
 .content {
@@ -1067,6 +1070,7 @@ form .inputBx textarea:valid~span {
 
     .good-points {
         background-color: #080808;
+        padding: 30px;
     }
 
     .content {
