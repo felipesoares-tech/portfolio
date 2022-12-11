@@ -6,13 +6,44 @@
     font-family: Inter, Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 p {
-    color: rgb(207, 207, 207);
+    color:var(--p--color);
+}
+:root{
+    --first-gradient-color: rgb(35, 0, 36);
+    --second-gradient-color: rgb(86, 9, 121);
+    --third-gradient-color: rgb(89, 0, 255);
+    --h1-color: #fff;
+    --p--color: rgb(207, 207, 207);
+    --colors-gradient: var(--first-gradient-color),var(--second-gradient-color),var(--third-gradient-color);
+    --color-background: #000;
+}
+
+.light-mode:root{
+    --first-gradient-color: #19a6a5;
+    --second-gradient-color: #a1f770;
+    --third-gradient-color: rgb(7, 121, 58);
+    --color-background: #EBE9E9;
+    --colors-gradient: var(--first-gradient-color),var(--second-gradient-color),var(--third-gradient-color);
+    --h1-color: #000;
+    --p--color: #000;
 }
 
 h1 {
     font-size: 3em;
+    color: var(--h1-color);
+}
+
+.container-btn-chkTheme{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+}
+
+#list-item-header li a[href="#contact"]{
+    display: none;
 }
 
 .container {
@@ -27,8 +58,52 @@ h1 {
     padding-top: 30px;
 }
 
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
 body {
-    background-color: #000;
+    background-color:var(--color-background);
 }
 
 #checkbox-menu {
@@ -120,7 +195,7 @@ footer{
     width: 100%;
 }
 
-.btn-desktop {
+.btn-desktop,.container-chk {
     position: relative;
     z-index: 2;
     display: block;
@@ -131,7 +206,7 @@ footer{
     padding: 10px 30px;
     border: 1px solid #3a0ca3;
     font-weight: 800;
-    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    background: linear-gradient(130deg,var(--colors-gradient));
     color: rgb(235, 227, 227);
     border-radius: 25px;
     transition: 0.3s;
@@ -236,7 +311,7 @@ header div p img {
     height: 40px;
     width: 130px;
     border: 0;
-    background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);
+    background: linear-gradient(130deg,var(--colors-gradient));
     border-radius: 20px;
 }
 
@@ -323,7 +398,7 @@ header div p img {
 .bar .progress-line span {
     height: 100%;
     width: 80%;
-    background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);
+    background: linear-gradient(130deg,var(--colors-gradient));
     position: absolute;
     border-radius: 10px;
     transform: scaleX(0);
@@ -462,7 +537,7 @@ strong {
 .gradient {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    background-image: linear-gradient(130deg,var(--colors-gradient));
     color: #fff;
     letter-spacing: 3px;
     font-size: 2em;
@@ -618,7 +693,7 @@ form .inputBx textarea:valid~.line::before {
     padding: 10px 30px;
     border: 1px solid #3a0ca3;
     font-weight: 800;
-    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    background: linear-gradient(130deg,var(--colors-gradient));
     color: rgb(235, 227, 227);
     border-radius: 25px;
     transition: 0.3s;
@@ -694,10 +769,15 @@ form .inputBx textarea:valid~span {
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 1.5em;
+        color: var(--h1-color);
     }
 
     #portfolio{
         padding-top: 50px;
+    }
+
+    #list-item-header li a[href="#contact"]{
+        display: block;
     }
 
     footer{
@@ -792,7 +872,7 @@ form .inputBx textarea:valid~span {
     }
 
     body {
-        background-color: #000;
+        background-color: var(--color-background);
     }
 
     #checkbox-menu {
@@ -979,7 +1059,7 @@ form .inputBx textarea:valid~span {
         height: 40px;
         width: 130px;
         border: 0;
-        background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);
+        background: linear-gradient(130deg,var(--colors-gradient));
         border-radius: 20px;
     }
 
@@ -1063,7 +1143,7 @@ form .inputBx textarea:valid~span {
     .bar .progress-line span {
         height: 100%;
         width: 80%;
-        background: linear-gradient(135deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(89, 0, 255) 100%);
+        background: linear-gradient(130deg,var(--colors-gradient));
         position: absolute;
         border-radius: 10px;
         transform: scaleX(0);
@@ -1206,7 +1286,7 @@ form .inputBx textarea:valid~span {
     .gradient {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+        background-image: linear-gradient(130deg,var(--colors-gradient));
         color: #fff;
         letter-spacing: 3px;
         font-size: 1.5em;
@@ -1362,7 +1442,7 @@ form .inputBx textarea:valid~span {
         padding: 10px 30px;
         border: 1px solid #3a0ca3;
         font-weight: 800;
-        background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+        background: linear-gradient(130deg,var(--colors-gradient));
         color: rgb(235, 227, 227);
         border-radius: 25px;
         transition: 0.3s;

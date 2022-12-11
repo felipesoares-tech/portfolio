@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="ht5">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/css/all.min.css">
 </head>
 
 <body>
@@ -22,9 +23,18 @@
                     <span></span>
                 </label>
             </div>
-            <div class="btn-desktop">
-                <button>Entre em contato</button>
-
+            <div class="container-btn-chkTheme">
+                <div class="btn-desktop">
+                    <a href="#contact"><button>Entre em contato</button></a>
+                </div>
+                <div class="container-chk">
+                    <input type="checkbox" class="checkbox" id="chk"/>
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </div>
         </div>
         <nav id="navigation">
@@ -55,24 +65,24 @@
         <div class="content">
             <div class="grid-gp">
                 <div class="point">
-                    <div><img src="assets/img/lamp.png" alt="lamp"></div>
+                    <div><img id="lamp" src="assets/img/lamp.png" alt="lamp"></div>
                     <strong>Ideias criativas</strong>
                     <p>Sempre buscando inovação para os projetos, para que a arquitetura da aplicação seja a mais
                         simples e funcional possível</p>
                 </div>
                 <div class="point">
-                    <div><img src="assets/img/like.png" alt="like"></div>
+                    <div><img id="like" src="assets/img/like.png" alt="like"></div>
                     <strong>Boas práticas</strong>
                     <p>O princípio SOLID é fundamental para escrever um bom código, é muito importante segui-lo para
                         obter um código limpo.</p>
                 </div>
                 <div class="point">
-                    <div><img src="assets/img/user.png" alt="user"></div>
+                    <div><img id="user" src="assets/img/user.png" alt="user"></div>
                     <strong>Amigo do usuário</strong>
                     <p>A experiência do usuário é importante para mim, Sempre atento ao feedback de nossos clientes.</p>
                 </div>
                 <div class="point">
-                    <div><img src="assets/img/design.png" alt="design"></div>
+                    <div><img id="design" src="assets/img/design.png" alt="design"></div>
                     <strong>Design atraente</strong>
                     <p>Cores, elementos e imagens são todos pensados para deixar o seu projeto incrível.</p>
                 </div>
