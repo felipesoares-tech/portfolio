@@ -325,6 +325,11 @@ header div p img {
     border: 0;
     background: linear-gradient(130deg,var(--colors-gradient));
     border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.buttons button:hover {
+    cursor: pointer;
 }
 
 .good-points {
@@ -1078,6 +1083,7 @@ form .inputBx textarea:valid~span {
         border: 0;
         background: linear-gradient(130deg,var(--colors-gradient));
         border-radius: 20px;
+        border: 1px solid #000;
     }
 
     .good-points {
