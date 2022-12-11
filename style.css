@@ -13,6 +13,10 @@ p {
     color: var(--p--color);
 }
 
+.p-faixa {
+    color: var(--text-points);
+}
+
 :root {
     --first-gradient-color: rgb(35, 0, 36);
     --second-gradient-color: rgb(86, 9, 121);
@@ -23,13 +27,16 @@ p {
     --color-background: #000;
     --background-social: #141414;
     --color-btn: var(--h1-color);
-    --color-sub-title: var(--h1-color); 
+    --color-sub-title: var(--h1-color);
     --text-points: #fff;
+    --icons-background-color: #13021D;
+    --background-about: #141414;
+    
 }
 
 .light-mode:root {
-    --first-gradient-color: #19a6a5;
-    --second-gradient-color: #a1f770;
+    --first-gradient-color: #19a62c;
+    --second-gradient-color: #51a81f;
     --third-gradient-color: rgb(7, 121, 58);
     --color-background: #EBE9E9;
     --colors-gradient: var(--first-gradient-color), var(--second-gradient-color), var(--third-gradient-color);
@@ -38,6 +45,8 @@ p {
     --background-social: transparent;
     --color-btn: #000;
     --color-sub-title: #000;
+    --icons-background-color: transparent;
+    --background-about: #fff;
 
 }
 
@@ -57,15 +66,19 @@ h1 {
     display: none;
 }
 
+#contact strong{
+    color: var(--color-sub-title);
+}
+
 #text-footer {
     color: var(--text-points);
 }
 
-.choices div p{
+.choices div p {
     color: var(--text-points);
 }
 
-.container-skill-bar{
+.container-skill-bar {
     width: 100%;
     padding: 30px;
 }
@@ -80,6 +93,7 @@ h1 {
 
 #portfolio {
     padding-top: 30px;
+    background-color: #080808;
 }
 
 .checkbox {
@@ -140,7 +154,11 @@ body {
     align-items: center;
     gap: 30px;
     margin-left: 100px;
+    background-color: var(--background-about);
     margin-right: 100px;
+    box-shadow: -6px 28px 90px 19px rgb(4 5 10 / 37%);
+    padding: 26px;
+    border-radius: 21px;
 }
 
 footer {
@@ -336,6 +354,7 @@ header div p img {
 .buttons button {
     height: 40px;
     width: 130px;
+    font-weight: 800;
     color: var(--color-btn);
     border: 0;
     background: linear-gradient(130deg, var(--colors-gradient));
@@ -524,6 +543,10 @@ header div p img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#about strong{
+    color: var(--color-sub-title);
 }
 
 .about-me div img {
@@ -792,9 +815,9 @@ form .inputBx textarea:valid~span {
 }
 
 .social div {
-    background-color: var(--background-social);
-    padding: 5px;
-    border-radius: 5px;
+    background-color: var(--icons-background-color);
+    padding: 7px;
+    border-radius: 31px;
 }
 
 .social div img {
@@ -809,6 +832,7 @@ form .inputBx textarea:valid~span {
 
     #portfolio {
         padding-top: 50px;
+        background-color: #080808;
     }
 
     #text-footer {
@@ -861,6 +885,10 @@ form .inputBx textarea:valid~span {
         flex-direction: column;
         margin-left: 0;
         margin-right: 0;
+        background-color: var(--background-about);
+        box-shadow: -6px 28px 90px 19px rgb(4 5 10 / 37%);
+        padding: 26px;
+        border-radius: 21px;
     }
 
     .about-me-info {
@@ -1099,6 +1127,7 @@ form .inputBx textarea:valid~span {
         height: 40px;
         width: 130px;
         color: var(--color-btn);
+        font-weight: 800;
         border: 0;
         background: linear-gradient(130deg, var(--colors-gradient));
         border-radius: 20px;
@@ -1281,8 +1310,16 @@ form .inputBx textarea:valid~span {
         align-items: center;
     }
 
+    #about strong{
+        color: var(--color-sub-title);
+    }
+
     #contact {
         padding-top: 50px;
+    }
+
+    #contact strong{
+        color: var(--color-sub-title);
     }
 
     .about-me div img {
@@ -1433,7 +1470,7 @@ form .inputBx textarea:valid~span {
         width: 100%;
     }
 
-    .choices div p{
+    .choices div p {
         color: var(--text-points);
     }
 
@@ -1555,9 +1592,9 @@ form .inputBx textarea:valid~span {
     }
 
     .social div {
-        background-color: var(--background-social);
-        padding: 5px;
-        border-radius: 5px;
+        background-color: var(--icons-background-color);
+        padding: 7px;
+        border-radius: 31px;
     }
 
     .social div img {

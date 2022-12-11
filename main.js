@@ -24,6 +24,7 @@ console.log(GetTheme)
 
 if (GetTheme == 'LIGHT') {
     htmlTag.classList.toggle('light-mode')
+    console.log('deveria estar selecionado')
     imgLamp.src = 'assets/img/lamp-light.png'
     imgLike.src = 'assets/img/like-light.png'
     imgUser.src = 'assets/img/user-light.png'
@@ -39,6 +40,7 @@ if (GetTheme == 'LIGHT') {
     imgDegraus.src = 'assets/img/degraus-light.png'
 
 } else {
+    console.log('deveria estar normal')
     imgLamp.src = 'assets/img/lamp.png'
     imgLike.src = 'assets/img/like.png'
     imgUser.src = 'assets/img/user.png'
