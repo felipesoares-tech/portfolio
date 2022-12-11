@@ -133,8 +133,8 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 footer {
@@ -350,8 +350,8 @@ header div p img {
     padding-top: 0px;
     padding-bottom: 0px;
     padding: 80px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
