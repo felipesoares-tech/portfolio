@@ -6,36 +6,38 @@
     font-family: Inter, Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 p {
-    color:var(--p--color);
+    color: var(--p--color);
 }
-:root{
+
+:root {
     --first-gradient-color: rgb(35, 0, 36);
     --second-gradient-color: rgb(86, 9, 121);
     --third-gradient-color: rgb(89, 0, 255);
     --h1-color: #fff;
     --p--color: rgb(207, 207, 207);
-    --colors-gradient: var(--first-gradient-color),var(--second-gradient-color),var(--third-gradient-color);
+    --colors-gradient: var(--first-gradient-color), var(--second-gradient-color), var(--third-gradient-color);
     --color-background: #000;
-    --background-social: #141414; 
+    --background-social: #141414;
     --color-btn: var(--h1-color);
-    --color-sub-title: var(var(--h1-color))
-    --text-points: #fff;
+    --color-sub-title: var(var(--h1-color)) --text-points: #fff;
 }
 
-.light-mode:root{
+.light-mode:root {
     --first-gradient-color: #19a6a5;
     --second-gradient-color: #a1f770;
     --third-gradient-color: rgb(7, 121, 58);
     --color-background: #EBE9E9;
-    --colors-gradient: var(--first-gradient-color),var(--second-gradient-color),var(--third-gradient-color);
+    --colors-gradient: var(--first-gradient-color), var(--second-gradient-color), var(--third-gradient-color);
     --h1-color: #000;
     --p--color: #000;
-    --background-social: transparent; 
+    --background-social: transparent;
     --color-btn: #000;
     --color-sub-title: #000;
-    
+
 }
 
 h1 {
@@ -43,18 +45,24 @@ h1 {
     color: var(--h1-color);
 }
 
-.container-btn-chkTheme{
+.container-btn-chkTheme {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
 }
 
-#list-item-header li a[href="#contact"]{
+#list-item-header li a[href="#contact"] {
     display: none;
 }
 
+#text-footer {
+    color: var(--text-points);
+}
 
+.choices div p{
+    color: var(--text-points);
+}
 
 .container {
     height: 100%;
@@ -64,56 +72,56 @@ h1 {
     display: none;
 }
 
-#portfolio{
+#portfolio {
     padding-top: 30px;
 }
 
 .checkbox {
-	opacity: 0;
-	position: absolute;
+    opacity: 0;
+    position: absolute;
 }
 
 .label {
-	background-color: #111;
-	border-radius: 50px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5px;
-	position: relative;
-	height: 26px;
-	width: 50px;
-	transform: scale(1.5);
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
 }
 
 .label .ball {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 22px;
-	width: 22px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
-	transform: translateX(24px);
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
 }
 
 
 .fa-moon {
-	color: #f1c40f;
+    color: #f1c40f;
 }
 
 .fa-sun {
-	color: #f39c12;
+    color: #f39c12;
 }
 
 body {
-    background-color:var(--color-background);
+    background-color: var(--color-background);
 }
 
 #checkbox-menu {
@@ -129,7 +137,7 @@ body {
     margin-right: 200px;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -137,23 +145,23 @@ footer{
     border-top: 1px solid rgba(82, 80, 80, 0.63);
 }
 
-.container-footer-items{
+.container-footer-items {
     display: flex;
     align-items: center;
     gap: 850px;
 }
 
-.container-footer-items img{
+.container-footer-items img {
     height: 20px;
 }
 
-#container-arrow{
+#container-arrow {
     background-color: #141414;
     padding: 10px;
     border-radius: 5px;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -162,11 +170,11 @@ footer{
     width: 100%;
 }
 
-.contact-container .deg-container img{
+.contact-container .deg-container img {
     height: 550px;
 }
 
-.about-me-info{
+.about-me-info {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -177,12 +185,12 @@ footer{
     padding-right: 300px;
 }
 
-.about-me-info div div p{
+.about-me-info div div p {
     margin-bottom: 20px;
     font-size: 1em;
 }
 
-.about-me-info div div h2{
+.about-me-info div div h2 {
     font-size: 1.48em;
     margin-bottom: 20px;
 }
@@ -206,7 +214,8 @@ footer{
     width: 100%;
 }
 
-.btn-desktop,.container-chk {
+.btn-desktop,
+.container-chk {
     position: relative;
     z-index: 2;
     display: block;
@@ -217,7 +226,7 @@ footer{
     padding: 10px 30px;
     border: 1px solid #3a0ca3;
     font-weight: 800;
-    background: linear-gradient(130deg,var(--colors-gradient));
+    background: linear-gradient(130deg, var(--colors-gradient));
     color: var(--color-btn);
     border-radius: 25px;
     transition: 0.3s;
@@ -323,7 +332,7 @@ header div p img {
     width: 130px;
     color: var(--color-btn);
     border: 0;
-    background: linear-gradient(130deg,var(--colors-gradient));
+    background: linear-gradient(130deg, var(--colors-gradient));
     border-radius: 20px;
     border: 1px solid #000;
 }
@@ -416,7 +425,7 @@ header div p img {
 .bar .progress-line span {
     height: 100%;
     width: 80%;
-    background: linear-gradient(130deg,var(--colors-gradient));
+    background: linear-gradient(130deg, var(--colors-gradient));
     position: absolute;
     border-radius: 10px;
     transform: scaleX(0);
@@ -557,7 +566,7 @@ strong {
 .gradient {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(130deg,var(--colors-gradient));
+    background-image: linear-gradient(130deg, var(--colors-gradient));
     color: #fff;
     letter-spacing: 3px;
     font-size: 2em;
@@ -647,7 +656,7 @@ strong {
     align-items: center;
     flex-direction: column;
     background-color: #141414;
-    width: 100%;
+    width: 500px;
     padding: 29px;
 }
 
@@ -689,7 +698,7 @@ strong {
     content: "";
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(130deg,var(--colors-gradient));
+    background-image: linear-gradient(130deg, var(--colors-gradient));
     transform: scaleX(0);
     transition: transform 0.3s ease;
 
@@ -713,7 +722,7 @@ form .inputBx textarea:valid~.line::before {
     padding: 10px 30px;
     border: 1px solid #3a0ca3;
     font-weight: 800;
-    background: linear-gradient(130deg,var(--colors-gradient));
+    background: linear-gradient(130deg, var(--colors-gradient));
     color: var(--color-btn);
     border-radius: 25px;
     transition: 0.3s;
@@ -741,7 +750,7 @@ form .inputBx textarea:valid~.line::before {
 form .inputBx input:focus~span,
 form .inputBx input:valid~span {
     transform: translateY(-25px);
-    background-image: linear-gradient(130deg,var(--colors-gradient));
+    background-image: linear-gradient(130deg, var(--colors-gradient));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #fff;
@@ -751,7 +760,7 @@ form .inputBx input:valid~span {
 form .inputBx textarea:focus~span,
 form .inputBx textarea:valid~span {
     transform: translateY(-20px);
-    background-image: linear-gradient(130deg,var(--colors-gradient));
+    background-image: linear-gradient(130deg, var(--colors-gradient));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #fff;
@@ -792,15 +801,19 @@ form .inputBx textarea:valid~span {
         color: var(--h1-color);
     }
 
-    #portfolio{
+    #portfolio {
         padding-top: 50px;
     }
 
-    #list-item-header li a[href="#contact"]{
+    #text-footer {
+        color: var(--text-points);
+    }
+
+    #list-item-header li a[href="#contact"] {
         display: block;
     }
 
-    footer{
+    footer {
         display: flex;
         justify-content: center;
         padding: 30px;
@@ -808,23 +821,23 @@ form .inputBx textarea:valid~span {
         border-top: 1px solid rgba(82, 80, 80, 0.63);
     }
 
-    .container-footer-items{
+    .container-footer-items {
         display: flex;
         align-items: center;
         gap: 30px;
     }
-    
-    .container-footer-items img{
+
+    .container-footer-items img {
         height: 20px;
     }
-    
-    #container-arrow{
+
+    #container-arrow {
         background-color: #141414;
         padding: 10px;
         border-radius: 5px;
     }
 
-    .contact-container{
+    .contact-container {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -832,8 +845,8 @@ form .inputBx textarea:valid~span {
         gap: 30px;
         width: 100%;
     }
-    
-    .contact-container .deg-container img{
+
+    .contact-container .deg-container img {
         height: 300px;
     }
 
@@ -844,7 +857,7 @@ form .inputBx textarea:valid~span {
         margin-right: 0;
     }
 
-    .about-me-info{
+    .about-me-info {
         display: flex;
         flex-direction: column-reverse;
         gap: 40px;
@@ -855,18 +868,18 @@ form .inputBx textarea:valid~span {
         padding-right: 0px;
     }
 
- 
-    .about-me-info div div h2{
+
+    .about-me-info div div h2 {
         font-size: 1.2em;
         margin-bottom: 10px;
     }
 
-    .about-me-info div div p{
+    .about-me-info div div p {
         font-size: small;
         margin-bottom: 15px;
     }
 
-    .about-me-info .container-info{
+    .about-me-info .container-info {
         padding: 25px 30px;
     }
 
@@ -1081,7 +1094,7 @@ form .inputBx textarea:valid~span {
         width: 130px;
         color: var(--color-btn);
         border: 0;
-        background: linear-gradient(130deg,var(--colors-gradient));
+        background: linear-gradient(130deg, var(--colors-gradient));
         border-radius: 20px;
         border: 1px solid #000;
     }
@@ -1167,7 +1180,7 @@ form .inputBx textarea:valid~span {
     .bar .progress-line span {
         height: 100%;
         width: 80%;
-        background: linear-gradient(130deg,var(--colors-gradient));
+        background: linear-gradient(130deg, var(--colors-gradient));
         position: absolute;
         border-radius: 10px;
         transform: scaleX(0);
@@ -1262,7 +1275,7 @@ form .inputBx textarea:valid~span {
         align-items: center;
     }
 
-    #contact{
+    #contact {
         padding-top: 50px;
     }
 
@@ -1312,7 +1325,7 @@ form .inputBx textarea:valid~span {
     .gradient {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(130deg,var(--colors-gradient));
+        background-image: linear-gradient(130deg, var(--colors-gradient));
         color: #fff;
         letter-spacing: 3px;
         font-size: 1.5em;
@@ -1414,6 +1427,10 @@ form .inputBx textarea:valid~span {
         width: 100%;
     }
 
+    .choices div p{
+        color: var(--text-points);
+    }
+
     .inputBx {
         position: relative;
         margin: 0 0 32px 0;
@@ -1444,7 +1461,7 @@ form .inputBx textarea:valid~span {
         content: "";
         height: 100%;
         width: 100%;
-        background-image: linear-gradient(130deg,var(--colors-gradient));
+        background-image: linear-gradient(130deg, var(--colors-gradient));
         transform: scaleX(0);
         transition: transform 0.3s ease;
 
@@ -1468,7 +1485,7 @@ form .inputBx textarea:valid~span {
         padding: 10px 30px;
         border: 1px solid #3a0ca3;
         font-weight: 800;
-        background: linear-gradient(130deg,var(--colors-gradient));
+        background: linear-gradient(130deg, var(--colors-gradient));
         color: var(--color-btn);
         border-radius: 25px;
         transition: 0.3s;
@@ -1496,7 +1513,7 @@ form .inputBx textarea:valid~span {
     form .inputBx input:focus~span,
     form .inputBx input:valid~span {
         transform: translateY(-25px);
-        background-image: linear-gradient(130deg,var(--colors-gradient));
+        background-image: linear-gradient(130deg, var(--colors-gradient));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #fff;
@@ -1506,7 +1523,7 @@ form .inputBx textarea:valid~span {
     form .inputBx textarea:focus~span,
     form .inputBx textarea:valid~span {
         transform: translateY(-20px);
-        background-image: linear-gradient(130deg,var(--colors-gradient));
+        background-image: linear-gradient(130deg, var(--colors-gradient));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #fff;
