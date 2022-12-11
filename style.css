@@ -19,6 +19,9 @@ p {
     --colors-gradient: var(--first-gradient-color),var(--second-gradient-color),var(--third-gradient-color);
     --color-background: #000;
     --background-social: #141414; 
+    --color-btn: var(--h1-color);
+    --color-sub-title: var(var(--h1-color))
+    --text-points: #fff;
 }
 
 .light-mode:root{
@@ -30,6 +33,9 @@ p {
     --h1-color: #000;
     --p--color: #000;
     --background-social: transparent; 
+    --color-btn: #000;
+    --color-sub-title: #000;
+    
 }
 
 h1 {
@@ -153,6 +159,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 200px;
+    width: 100%;
 }
 
 .contact-container .deg-container img{
@@ -211,7 +218,7 @@ footer{
     border: 1px solid #3a0ca3;
     font-weight: 800;
     background: linear-gradient(130deg,var(--colors-gradient));
-    color: rgb(235, 227, 227);
+    color: var(--color-btn);
     border-radius: 25px;
     transition: 0.3s;
     cursor: pointer;
@@ -314,6 +321,7 @@ header div p img {
 .buttons button {
     height: 40px;
     width: 130px;
+    color: var(--color-btn);
     border: 0;
     background: linear-gradient(130deg,var(--colors-gradient));
     border-radius: 20px;
@@ -346,7 +354,7 @@ header div p img {
 }
 
 .skill-bar {
-    width: 597.66px;
+    width: 100%;
     height: 431.25px;
     background: #141414;
     border-radius: 10px;
@@ -526,12 +534,14 @@ strong {
 }
 
 .point strong {
+    color: var(--text-points);
     margin-bottom: 8px;
 }
 
 .point p {
     line-height: 23px;
     font-size: 1.2em;
+    color: var(--text-points);
 }
 
 #about img {
@@ -621,7 +631,7 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 525px;
+    width: 100%;
     height: auto;
     padding: 20px 12px;
 }
@@ -699,7 +709,7 @@ form .inputBx textarea:valid~.line::before {
     border: 1px solid #3a0ca3;
     font-weight: 800;
     background: linear-gradient(130deg,var(--colors-gradient));
-    color: rgb(235, 227, 227);
+    color: var(--color-btn);
     border-radius: 25px;
     transition: 0.3s;
     cursor: pointer;
@@ -815,6 +825,7 @@ form .inputBx textarea:valid~span {
         justify-content: center;
         align-items: center;
         gap: 30px;
+        width: 100%;
     }
     
     .contact-container .deg-container img{
@@ -1063,6 +1074,7 @@ form .inputBx textarea:valid~span {
     .buttons button {
         height: 40px;
         width: 130px;
+        color: var(--color-btn);
         border: 0;
         background: linear-gradient(130deg,var(--colors-gradient));
         border-radius: 20px;
@@ -1095,7 +1107,7 @@ form .inputBx textarea:valid~span {
     }
 
     .skill-bar {
-        width: 380px;
+        width: 100%;
         background: #141414;
         border-radius: 10px;
         padding: 25px 30px;
@@ -1276,12 +1288,14 @@ form .inputBx textarea:valid~span {
     }
 
     .point strong {
+        color: var(--text-points);
         margin-bottom: 8px;
     }
 
     .point p {
         line-height: 23px;
         font-size: 0.9em;
+        color: var(--text-points);
     }
 
     #about img {
@@ -1371,7 +1385,7 @@ form .inputBx textarea:valid~span {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 400px;
+        width: 100%;
         height: auto;
         padding: 20px 12px;
     }
@@ -1449,7 +1463,7 @@ form .inputBx textarea:valid~span {
         border: 1px solid #3a0ca3;
         font-weight: 800;
         background: linear-gradient(130deg,var(--colors-gradient));
-        color: rgb(235, 227, 227);
+        color: var(--color-btn);
         border-radius: 25px;
         transition: 0.3s;
         cursor: pointer;
