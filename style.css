@@ -560,17 +560,17 @@ strong {
 
 .bg-one {
     position: relative;
-    background-image: url('assets/img/bg-img.png');
+    background-image: url('assets/img/bg-img-1.png');
 }
 
 .bg-two {
     position: relative;
-    background-image: url('assets/img/bg-img.png');
+    background-image: url('assets/img/bg-img-2.png');
 }
 
 .bg-three {
     position: relative;
-    background-image: url('assets/img/bg-img.png');
+    background-image: url('assets/img/bg-img-3.png');
 }
 
 .project {
@@ -1314,17 +1314,17 @@ form .inputBx textarea:valid~span {
 
     .bg-one {
         position: relative;
-        background-image: url('assets/img/bg-img.png');
+        background-image: url('assets/img/bg-img-1.png');
     }
 
     .bg-two {
         position: relative;
-        background-image: url('assets/img/bg-img.png');
+        background-image: url('assets/img/bg-img-2.png');
     }
 
     .bg-three {
         position: relative;
-        background-image: url('assets/img/bg-img.png');
+        background-image: url('assets/img/bg-img-3.png');
     }
 
     .project {
