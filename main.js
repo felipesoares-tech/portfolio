@@ -12,6 +12,11 @@ const imgLamp = document.getElementById('lamp')
 const imgLike = document.getElementById('like')
 const imgUser = document.getElementById('user')
 const imgDesign = document.getElementById('design')
+/*REDES SOCIAIS */
+const imgGit = document.getElementById('git-img')
+const imgInsta = document.getElementById('insta-img')
+const imgLink = document.getElementById('linke-img')
+const imgWhats = document.getElementById('whats-img')
 
 console.log(GetTheme)
 
@@ -22,12 +27,23 @@ if(GetTheme == 'LIGHT'){
     imgUser.src = 'assets/img/user-light.png'
     imgDesign.src = 'assets/img/design-light.png'
     tagDev.src = 'assets/img/tag-light.png'
+
+    imgInsta.src = 'assets/img/insta-light.png'
+    imgGit.src = 'assets/img/github-light.png'
+    imgLink.src = 'assets/img/linkedin-light.png'
+    imgWhats.src = 'assets/img/whats-light.png'
+
 }else{
     imgLamp.src = 'assets/img/lamp.png'
     imgLike.src = 'assets/img/like.png'
     imgUser.src = 'assets/img/user.png'
     imgDesign.src = 'assets/img/design.png'
     tagDev.src = 'assets/img/tag.png'
+
+    imgInsta.src = 'assets/img/insta.png'
+    imgGit.src = 'assets/img/github.png'
+    imgLink.src = 'assets/img/linkedin.png'
+    imgWhats.src = 'assets/img/whats.png'
     
 }
 
@@ -46,6 +62,11 @@ chkTheme.addEventListener('change', () => {
         imgUser.src = 'assets/img/user-light.png'
         imgDesign.src = 'assets/img/design-light.png'
         tagDev.src = 'assets/img/tag-light.png'
+
+        imgInsta.src = 'assets/img/insta-light.png'
+        imgGit.src = 'assets/img/github-light.png'
+        imgLink.src = 'assets/img/linkedin-light.png'
+        imgWhats.src = 'assets/img/whats-light.png'
     }else{
         console.log('Dark Mode')
         theme = 'DARK'
@@ -54,6 +75,11 @@ chkTheme.addEventListener('change', () => {
         imgUser.src = 'assets/img/user.png'
         imgDesign.src = 'assets/img/design.png'
         tagDev.src = 'assets/img/tag.png'
+
+        imgInsta.src = 'assets/img/insta.png'
+        imgGit.src = 'assets/img/github.png'
+        imgLink.src = 'assets/img/linkedin.png'
+        imgWhats.src = 'assets/img/whats.png'
     }
 
     //save to localStorage

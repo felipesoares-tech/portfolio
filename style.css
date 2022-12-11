@@ -18,6 +18,7 @@ p {
     --p--color: rgb(207, 207, 207);
     --colors-gradient: var(--first-gradient-color),var(--second-gradient-color),var(--third-gradient-color);
     --color-background: #000;
+    --background-social: #141414; 
 }
 
 .light-mode:root{
@@ -28,6 +29,7 @@ p {
     --colors-gradient: var(--first-gradient-color),var(--second-gradient-color),var(--third-gradient-color);
     --h1-color: #000;
     --p--color: #000;
+    --background-social: transparent; 
 }
 
 h1 {
@@ -669,7 +671,7 @@ strong {
     content: "";
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    background-image: linear-gradient(130deg,var(--colors-gradient));
     transform: scaleX(0);
     transition: transform 0.3s ease;
 
@@ -721,7 +723,7 @@ form .inputBx textarea:valid~.line::before {
 form .inputBx input:focus~span,
 form .inputBx input:valid~span {
     transform: translateY(-25px);
-    background-image: linear-gradient(130deg, rgb(81, 12, 83) 0%, rgb(86, 9, 121) 35%, rgb(201, 187, 195) 100%);
+    background-image: linear-gradient(130deg,var(--colors-gradient));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #fff;
@@ -731,7 +733,7 @@ form .inputBx input:valid~span {
 form .inputBx textarea:focus~span,
 form .inputBx textarea:valid~span {
     transform: translateY(-20px);
-    background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+    background-image: linear-gradient(130deg,var(--colors-gradient));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #fff;
@@ -757,7 +759,7 @@ form .inputBx textarea:valid~span {
 }
 
 .social div {
-    background-color: #141414;
+    background-color: var(--background-social);
     padding: 5px;
     border-radius: 5px;
 }
@@ -1418,7 +1420,7 @@ form .inputBx textarea:valid~span {
         content: "";
         height: 100%;
         width: 100%;
-        background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+        background-image: linear-gradient(130deg,var(--colors-gradient));
         transform: scaleX(0);
         transition: transform 0.3s ease;
 
@@ -1470,7 +1472,7 @@ form .inputBx textarea:valid~span {
     form .inputBx input:focus~span,
     form .inputBx input:valid~span {
         transform: translateY(-25px);
-        background-image: linear-gradient(130deg, rgb(81, 12, 83) 0%, rgb(86, 9, 121) 35%, rgb(201, 187, 195) 100%);
+        background-image: linear-gradient(130deg,var(--colors-gradient));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #fff;
@@ -1480,7 +1482,7 @@ form .inputBx textarea:valid~span {
     form .inputBx textarea:focus~span,
     form .inputBx textarea:valid~span {
         transform: translateY(-20px);
-        background-image: linear-gradient(130deg, rgb(35, 0, 36) 0%, rgb(86, 9, 121) 35%, rgb(247, 240, 240) 100%);
+        background-image: linear-gradient(130deg,var(--colors-gradient));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #fff;
@@ -1506,7 +1508,7 @@ form .inputBx textarea:valid~span {
     }
 
     .social div {
-        background-color: #141414;
+        background-color: var(--background-social);
         padding: 5px;
         border-radius: 5px;
     }
