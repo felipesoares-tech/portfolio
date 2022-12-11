@@ -18,9 +18,12 @@ const imgInsta = document.getElementById('insta-img')
 const imgLink = document.getElementById('linke-img')
 const imgWhats = document.getElementById('whats-img')
 
+const imgPhone = document.getElementById('phone')
+const imgDegraus = document.getElementById('degraus')
+
 console.log(GetTheme)
 
-if(GetTheme == 'LIGHT'){
+if (GetTheme == 'LIGHT') {
     htmlTag.classList.toggle('light-mode')
     imgLamp.src = 'assets/img/lamp-light.png'
     imgLike.src = 'assets/img/like-light.png'
@@ -33,7 +36,10 @@ if(GetTheme == 'LIGHT'){
     imgLink.src = 'assets/img/linkedin-light.png'
     imgWhats.src = 'assets/img/whats-light.png'
 
-}else{
+    imgPhone.src = 'assets/img/phone-light.png'
+    imgDegraus.src = 'assets/img/degraus-light.png'
+
+} else {
     imgLamp.src = 'assets/img/lamp.png'
     imgLike.src = 'assets/img/like.png'
     imgUser.src = 'assets/img/user.png'
@@ -44,17 +50,20 @@ if(GetTheme == 'LIGHT'){
     imgGit.src = 'assets/img/github.png'
     imgLink.src = 'assets/img/linkedin.png'
     imgWhats.src = 'assets/img/whats.png'
-    
+
+    imgPhone.src = 'assets/img/phone.png'
+    imgDegraus.src = 'assets/img/degraus.png'
+
 }
 
 
 
 chkTheme.addEventListener('change', () => {
-	htmlTag.classList.toggle('light-mode')
+    htmlTag.classList.toggle('light-mode')
 
     var theme
 
-    if(htmlTag.classList.contains('light-mode')){
+    if (htmlTag.classList.contains('light-mode')) {
         console.log('Light Mode')
         theme = 'LIGHT'
         imgLamp.src = 'assets/img/lamp-light.png'
@@ -67,7 +76,10 @@ chkTheme.addEventListener('change', () => {
         imgGit.src = 'assets/img/github-light.png'
         imgLink.src = 'assets/img/linkedin-light.png'
         imgWhats.src = 'assets/img/whats-light.png'
-    }else{
+
+        imgPhone.src = 'assets/img/phone-light.png'
+        imgDegraus.src = 'assets/img/degraus-light.png'
+    } else {
         console.log('Dark Mode')
         theme = 'DARK'
         imgLamp.src = 'assets/img/lamp.png'
@@ -80,6 +92,9 @@ chkTheme.addEventListener('change', () => {
         imgGit.src = 'assets/img/github.png'
         imgLink.src = 'assets/img/linkedin.png'
         imgWhats.src = 'assets/img/whats.png'
+
+        imgPhone.src = 'assets/img/phone.png'
+        imgDegraus.src = 'assets/img/degraus.png'
     }
 
     //save to localStorage
