@@ -64,6 +64,11 @@ h1 {
     color: var(--text-points);
 }
 
+.container-skill-bar{
+    width: 100%;
+    padding: 30px;
+}
+
 .container {
     height: 100%;
     display: flex;
