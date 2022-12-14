@@ -38,6 +38,7 @@ if (GetTheme == 'LIGHT') {
 
     imgPhone.src = 'assets/img/phone-light.png'
     imgDegraus.src = 'assets/img/degraus-light.png'
+    
 
 } else {
     console.log('deveria estar normal')
@@ -54,6 +55,7 @@ if (GetTheme == 'LIGHT') {
 
     imgPhone.src = 'assets/img/phone.png'
     imgDegraus.src = 'assets/img/degraus.png'
+    chkTheme.checked = 'checked'
 
 }
 
